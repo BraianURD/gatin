@@ -1,0 +1,73 @@
+main{ 
+    margin:auto;
+}   
+
+//MAPA 
+
+$mapAspectos:(aspectos:black,);
+
+@each $aspectos, $color in $mapAspectos {
+    .#{$aspectos}{
+        color: $color;
+    }
+}
+
+//MAPA GET
+$mapPadding:(aspectos:20px);
+
+.aspectos{
+    padding: map-get($map: $mapPadding, $key:aspectos);
+}
+
+
+//extend y mixins 
+
+h1{
+    text-align: center;
+    color: #000;
+    
+
+    &:hover{
+        background-color: #fefae0;
+    }
+}
+
+@mixin letra {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    @extend h1;
+    text-align: center;
+    font-family: 'Indie Flower';
+    background-color: #f5ebe0;
+}
+
+/* animacion icono michi nav */
+.cambio{
+    width: 100%;
+    animation: cambio 8s infinite;
+    @include letra;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20% {margin-left: 0;}
+    70%{margin-left: -200%;} 
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+//responsive
+@media screen and (max-width:768px){
+    main{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:480px){
+    main{
+        padding: 0;
+    }
+} 

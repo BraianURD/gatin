@@ -1,0 +1,52 @@
+main {
+  margin: auto; }
+
+.aspectos {
+  color: black; }
+
+.aspectos {
+  padding: 20px; }
+
+h1, h2 {
+  text-align: center;
+  color: #000; }
+  h1:hover, h2:hover {
+    background-color: #fefae0; }
+
+h2 {
+  text-align: center;
+  font-family: 'Indie Flower';
+  background-color: #f5ebe0; }
+
+/* animacion icono michi nav */
+.cambio {
+  width: 100%;
+  animation: cambio 8s infinite;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+@keyframes cambio {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0; } }
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 0; } }
+
+h3 {
+  text-align: center;
+  font-family: 'Indie Flower'; }
+
+body {
+  background-color: #eff7f6; }
